@@ -4,6 +4,10 @@
 @import "{{ site.theme }}";
 
 /* ===== 全局 ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC",
     "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
@@ -15,15 +19,22 @@ body {
 .page-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   padding: 2rem 1rem;
+  margin: 0;
+}
+.page-header h1 a {
+  color: #fff;
+  text-decoration: none;
 }
 .page-header h1 {
   font-size: 2rem;
-  margin-bottom: 0.3rem;
+  margin: 0 0 0.3rem;
+  color: #fff;
 }
 .page-header h2 {
   font-size: 1rem;
   opacity: 0.85;
   font-weight: 400;
+  margin: 0;
 }
 
 /* ===== 列表页 ===== */
