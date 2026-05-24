@@ -1,4 +1,10 @@
 title: 技术前沿
 description: 关注科技与创新
-theme: jekyll-theme-cayman
+theme: jekyll-theme-modernist
 future: true
+permalink: /:year/:month/:title.html
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "post"
