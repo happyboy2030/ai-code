@@ -1,0 +1,25 @@
+---
+---
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1><a href="{{ site.baseurl }}/" style="color:#fff;text-decoration:none">{{ site.title }}</a></h1>
+    <h2>{{ site.description }}</h2>
+  </header>
+
+  <section class="main-content">
+    {{ content }}
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: "%Y" }} · <a href="https://github.com/happyboy2030/ai-code" style="color:#95a5a6">GitHub</a></p>
+  </footer>
+</body>
+</html>
